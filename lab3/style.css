@@ -1,0 +1,36 @@
+li a {
+    text-decoration: underline;
+    /* Tat ca the a ben trong li */
+}
+
+li > a {
+    text-decoration: none;
+    /* The a nam TRUC TIEP ben trong li */
+}
+
+li + a{
+    text-decoration: none;
+    /* Ap dung cho the nam ngay ben duoi */
+}
+
+li + p{
+    color: cadetblue;
+    /* nam ngay ben duoi */
+}
+
+li ~ p{
+    /* tat ca the ben duoi = cung cap */
+}
+
+[href] {
+    color: cyan;
+}
+
+[href="google"] {
+    color: green
+}
+
+
+* {
+    /* chon tat ca phan tu */
+}
