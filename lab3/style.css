@@ -1,36 +1,86 @@
-li a {
-    text-decoration: underline;
-    /* Tat ca the a ben trong li */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-li > a {
-    text-decoration: none;
-    /* The a nam TRUC TIEP ben trong li */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    background-color: blanchedalmond;
 }
 
-li + a{
-    text-decoration: none;
-    /* Ap dung cho the nam ngay ben duoi */
+ul{
+    list-style: square;
 }
 
-li + p{
-    color: cadetblue;
-    /* nam ngay ben duoi */
+img{
+    max-width: 90%;
+    vertical-align: middle;
 }
 
-li ~ p{
-    /* tat ca the ben duoi = cung cap */
+/* Class chung */
+
+.container{
+    width: 1100px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: cadetblue;
 }
 
-[href] {
-    color: cyan;
+.row{
+    word-spacing: -1ch;
 }
 
-[href="google"] {
-    color: green
+.item{  
+    word-spacing: normal;
+    display: inline-block;
+    vertical-align: top;
+
+}
+/* Header */
+.header{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Navigation */
+.menu-link{
+    display: block;
+    background-color: aquamarine;
+    padding: 10px;
+}
 
-* {
-    /* chon tat ca phan tu */
+.menu-link.active{
+    background-color:rgba(aquamarine, aquamarine,aquamarine , 0.5);
+    color: rgb(162, 13, 207);
+
+}
+/* Main content */
+
+.main{
+    width: 75%;
+}
+
+.aside{
+    width: 25%;
+    background-color: salmon;
+}
+
+/* Main */
+
+.section .item{
+    width: 24%;
+    height: 150px;
+    background-color: chocolate;
+}
+
+.menu-item{
+    background-color: darkgray;
 }
