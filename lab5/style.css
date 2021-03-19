@@ -1,0 +1,27 @@
+table{
+    border-collapse: separate;
+    border-spacing: 0mm;
+    width: 50%;
+    caption-side: top;
+    table-layout: fixed;
+}
+
+table, tr, th , td{
+    width: 200px;
+    border: 1px solid;
+}
+
+th, td{
+    padding: 20px;
+    vertical-align: center;
+    text-align: center;
+    line-height: 100%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: aqua;
+}
+
+tbody td:empty{
+    background-co
+}
