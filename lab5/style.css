@@ -18,10 +18,5 @@ th, td{
     line-height: 100%;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: aqua;
-}
 
-tbody td:empty{
-    background-co
-}
+

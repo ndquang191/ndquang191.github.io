@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    
+
+
+    <form  name="signup">
+        <div class="form-group">
+            <label for="username">Nhập Tên vào</label>
+            <input id="username" name="username" type="text" placeholder="Nhap Username" required>   
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">   
+        </div>
+
+        <div class="form-group">
+            <label for="number">Number</label>
+            <input id="number" name="number" type="number" min="10" max="100" step="10">   
+        </div>
+
+        <div class="form-group">
+            <input name="file" type="file">   
+        </div>
+
+        <div class="form-group">
+
+            <div class="input-group">
+                <label for="male" >Male</label>
+                <input checked id="male" name="gender" type="radio" value="nam">
+            </div>
+
+            <div class="input-group">
+                <label for="female" >Female</label>
+                <input id="female" name="gender" type="radio" value="nữ">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input name="gender" type="checkbox" value="email" id="email">   
+            <label for="email">Nhận qua email</label>
+
+            
+
+            <input checked name="gender" type="checkbox" value="mess" id="mess">   
+            <label for="mess">Nhận qua mess</label>
+        </div>
+
+        <div class="form-group">
+            <select name="year" id="">
+                <option value="1992">1992</option>
+            </select>
+        </div>
+
+        <div class="form-group note-group">
+            <label for="note">Note</label>
+           <textarea name="note" id="note" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit">
+            <input type="reset">   
+
+            <button type="submit">Gửi đi</button>
+        </div>
+    </form>
 </body>
 </html>
