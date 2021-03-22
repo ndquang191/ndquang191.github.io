@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    border: 0;
+    max-width: 100%;
+}
+
+body{
+    display: block;
+    background-color:#edf0f5;
+    color: black;
+    line-height: 1.34;
+    
+}
+
+.container{
+
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: inherit;
+    width: 980px;
+    height: 400px;
+}
+
+.fb-image{
+    height: 106px;
+}
+
+form{
+    border: 1px solid black;
+}
+
+.side{
+    width: 49%;
+    display: inline-block;
+}
+
+.form{
+    box-sizing: content-box;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    width: 400px;
+    height: 320px;
+    border-radius: 3%;
+    box-shadow: 2px 2px;
+}
+
+.form-group{
+    padding: 14px 16px;
+}
+
+input{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    height: 40px;
+    border-radius: 6px;
+
+}
+
+.signin{
+    writing-mode: 330px;
+    height: 40px;
+    background: darkblue;
+    padding: 14px 16px;
+    margin: auto;
+}
