@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap:wrap ;
+
+}
+
+.flex.row{
+    flex-direction: row;
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+.flex.j-start{
+    justify-content: flex-start;
+}
+
+.flex.j-end{
+    justify-content: flex-end;
+}
+
+.flex .j-between{
+    justify-content: space-between;
+}
+
+.flex.a-stretch{
+    align-items: stretch;
+}
+
+.flex.a-center{
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    border: 1px red;
+}
+
+.actions{
+    margin-left: auto;
+}
+.logo{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.menu-item{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-right: 15px;
+}
+
+.search-form{
+    position: relative;
+    margin-left: 300px;
+}
+
+.search-form input{
+    padding:10px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.search-form button{
+    position: relative;
+    top: 6px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.header{
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    z-index: 10;
+}
+
+.main-content{
+    margin-top: 100px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: red solid 1px;
+}
+
+.left{
+    flex-basis: calc(75%);
+    margin-right: 5px;
+}
+.right{
+    flex-basis: calc(25%);
+}
+
+.left .main-item{
+    width: 100%;
+}
+.left .item{
+    width: 33%;
+}
+
+.right .item{
+    margin-left: 10px;
+}
+
+.new-header{
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+}
+.new-items{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+.new-items .item{
+    position: relative;
+    margin-bottom: 10px;
+    width: calc(25% - 20px/3);
+}
+
+firgure .view{
+    color: white;    
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+firgure .name{
+    color: white;    
+    position: absolute;
+    bottom: 3%;
+    left: 1%;
+}
+
+firgure .play{
+    display:none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid white;
+    background: transparent;
+    color: white;
+    position: absolute;
+    left: 1%;
+    top: 3%;
+}
+
+.new-items .item:hover .play{
+    display: inline;
+}
