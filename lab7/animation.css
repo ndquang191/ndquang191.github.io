@@ -1,0 +1,3 @@
+.ani{
+    animation: spin 1  delay infinite direction fill-mode;
+}
