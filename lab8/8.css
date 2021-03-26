@@ -1,0 +1,342 @@
+:root{
+    --gutter: 10px;
+    --primary-color: #a25f4b;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: center;
+
+}
+
+ul,il{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #1d1f2e;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-1{
+    width: 100%/12;
+}
+
+.col-2{
+    flex-basis: 16.67%;
+}
+
+.col-3{
+    flex-basis: 25%;
+}
+
+.col-4{
+    flex-basis: 33.33%;
+}
+
+.col-5{
+    flex-basis: 100%/12*5;
+}
+
+.col-6{
+    flex-basis: 50%;
+}
+.col-7{
+    flex-basis: 58.33%
+}
+.col-8{
+    flex-basis: 66.67%;
+}
+.col-9{
+    flex-basis: 75%;
+}
+.col-10{
+    flex-basis: 83.33;
+}
+.col-11{
+    flex-basis: 91.67%;
+}
+
+.col-12{
+    flex-basis: 100%;
+}
+
+.flex{
+    display: flex
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+.flex.wrap{
+    flex-wrap: wrap;
+}
+
+.flex.j-center{
+    justify-content: center;
+}
+
+.flex.j-end{
+    justify-content: flex-end;
+}
+
+.flex.j-between{
+    justify-content: space-between;
+}
+
+.flex.a-start{
+    align-items: flex-start;
+}
+.flex.a-center{
+    align-items: center;
+}
+.flex.a-end{
+    align-items: flex-end;
+}
+.nav{
+    max-width: 1400;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    margin-bottom: 50px;
+
+    
+}
+
+.logo{
+
+}
+.menu-link {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 50px;
+}
+
+/* banner */
+
+.banner{
+    background-image: url(https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a58aaecdfba_Header-Pic.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #050827;
+    max-width: 1440px;
+    min-height: 530px;
+    min-width: 880px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    margin-bottom: 130px;
+}
+
+.banner h3{
+    opacity: 0.8;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+
+.banner h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 48px;
+    line-height: 60px
+
+}
+
+.banner .explore-product{
+    position: relative;
+    top: 50px;
+    padding: 18px 24px;
+    background-color: white;
+    color: black;
+    opacity: 100;
+    box-shadow: 0 2px 6px 0 rgb(29 31 46 / 10%);;
+}
+
+.main{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.story h2{
+    opacity: 1;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 800;
+
+}
+.story p{
+    margin-bottom: 40px;
+}
+.story a{
+    position: relative;
+    margin-top: 100px;
+    color: var(--primary-color) ;
+    font-size: 20px;
+}
+.story{
+    margin-bottom: 120px;
+}
+
+/* mugs */
+
+.mug-slogan{
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.mugs .line{
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #ececed;
+}
+
+.mugs{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+
+/* products */
+
+.products-1 .prd-img{
+    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg); 
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    min-width: 460px;
+    min-height: 540px;
+    background-color: violet;
+    margin-bottom: 30px;
+    /* max-width: 1440px;
+    min-height: 530px;
+    min-width: 880px; */
+    
+}
+
+.products-2 .prd-img{
+    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg); 
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    min-width: 300px;
+    min-height: 380px;
+    background-color: violet;
+    margin-bottom: 30px;
+    /* max-width: 1440px;
+    min-height: 530px;
+    min-width: 880px; */
+    
+}
+
+.explore-mug{
+    justify-content: center;
+    padding: 18px 150px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 6px 0 rgb(29 31 46 / 10%);
+    display: none;
+    margin-bottom: 20px;
+}
+
+.products-1  .product:hover .explore-mug{
+    display: inline-block;
+}
+
+.product-1{
+    margin-bottom: 100px;
+}
+.price h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.products-2 .prd-img{
+    width: 300px;
+    height: 380px;
+}
+
+.products-2 .explore-mug{
+   padding: 15px 90px;
+}
+
+.products-2  .product:hover .explore-mug{
+    display: inline-block;
+}
+
+.sale-tag{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 8px 15px;
+    background: white;
+    color: #a25f4b;
+    font-weight: 900;
+}
