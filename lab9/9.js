@@ -46,7 +46,7 @@ function cToF(c){
 }
 
 function cToK(c){
-    return c+ 273.15;
+    return c + 273.15;
 }
 
 console.log( c + " *C doi sang *F : " + cToF(c));
