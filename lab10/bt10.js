@@ -19,6 +19,14 @@
 // }
 
 
+// a > b 
+//     ? a > c
+//         ? console.log(a + " la so lon nhat") 
+//         : console.log(c + " la so lon nhat")
+//     : b > c
+//         ? console.log(b + " la so lon nhat")
+//         : console.log(c + " la so lon nhat")   
+
 // Bai2: VCT nhập một năm year, kiểm tra và in ra năm đó có phải năm nhuận hay không
 
 // let a = Number(prompt("Nhap nam vao"))
@@ -34,22 +42,30 @@
  
 
 
-// let a = prompt("Nhap vao 1 ki tu")
+let a = prompt("Nhap vao 1 ki tu")
 
+if( a[1] == undefined){
+    if( a[0] >= "A" && a[0] <= "Z" ){
 
-// if( a[1] == undefined){
-//     if( a == 'u' || a == 'e' || a == 'o' || a == 'a' || a == 'i'){
-//         console.log("Nguyen am")
-//     }
-//     else{
-//         console.log("Phu am")
-//     }
-// }
+        if( a == 'u' || a == 'e' || a == 'o' || a == 'A' || a == 'i'){
+            console.log("Nguyen am")
+        }
+        else{
+            console.log("Khong biet no la cai gi")
+        }
+    }
+    else{
+        console.log("Sieu nhan 2")
+    }
+}
+else{
+    console.log("Sieu nhan")
+}
 // else{
 //     console.log("Nhap sai")
 // }
 
-// Bai4: 
+// // Bai4: 
 
 
 // Biai 5 VCT nhập ba hệ số a, b, c, của phương trình bậc 2 ax2 + bx + c = 0, tính và in ra nghiệm phương trình đó
@@ -78,18 +94,18 @@
 
 // Bai6 : 6. VCT nhập số điểm point ở thang điểm 10 của sinh viên quy đổi sang thang điểm chữ:
 
-let a = Number(prompt("Nhap diem"))
+// let a = Number(prompt("Nhap diem"))
 
-if( 0 <= a && a <= 10){
-    if( a <= 4){
-        console.log(a + " tuong duong diem F")
-    }
-    else if( a < 5.5 ){
-        console.log(a + " tuong duong diem D")
-    }
-    else if( a < 7){
-        console.log(a + " tsong duong diem C")
-    }
-    else if( a < 8.5){}
-}
+// if( 0 <= a && a <= 10){
+//     if( a <= 4){
+//         console.log(a + " tuong duong diem F")
+//     }
+//     else if( a < 5.5 ){
+//         console.log(a + " tuong duong diem D")
+//     }
+//     else if( a < 7){
+//         console.log(a + " tsong duong diem C")
+//     }
+//     else if( a < 8.5){}
+// }
 

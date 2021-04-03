@@ -37,12 +37,25 @@
 
 // Bai 4:Viết chương trình nhập vào 2 số a, b là tham số của phương trình bậc nhất ax + b = 0, tính và in ra nghiệm của phương trình đó
 
-let a = Number(prompt("Nhap a"))
-let b = Number(prompt("Nhap b"))
+// let a = Number(prompt("Nhap a"))
+// let b = Number(prompt("Nhap b"))
 
-a == 0
-    ? b == 0
-        ? console.log("Vo so nghiem")
-        : console.log("Vo nghiem")
-    : console.log("Nghiem la " + -b/a)
+// a == 0
+//     ? b == 0
+//         ? console.log("Vo so nghiem")
+//         : console.log("Vo nghiem")
+//     : console.log("Nghiem la " + -b/a)
 
+
+
+// Bai 5 : tam gia
+
+let a = Number(prompt("Nhap canh a"))
+let b = Number(prompt("Nhap canh b"))
+let c = Number(prompt("Nhap canh c"))
+
+a + b > c && a + c > b && b + c > a && console.log("Tam giac")
+
+
+ (a + b <= c || a + c <= b || b + c <= a) || console.log("khong phai Tam giac")
+    
