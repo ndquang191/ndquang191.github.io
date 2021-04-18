@@ -179,19 +179,34 @@ let a = [1, 2, 3, 1 , 2, 4, 5, 6, 7, 8, 9, 10 , 1 ];
 
 //=====================================================
 
-function shuffle( arr ){
+// function shuffle( arr ){
 
-    let xx = Math.floor(Math.random() * 10)
+//     let xx = Math.floor(Math.random() * 10)
 
-    for( let i = 0 ; i < xx ; i++){
-        let index1 = Math.floor(Math.random() * arr.length)
-        let index2 = Math.floor(Math.random() * arr.length)
+//     for( let i = 0 ; i < xx ; i++){
+//         let index1 = Math.floor(Math.random() * arr.length)
+//         let index2 = Math.floor(Math.random() * arr.length)
 
-        let temp = arr[index1];
-        arr[index1] = arr[index2];
-        arr[index2] = temp;
-    }
-    return arr;
-}
+//         let temp = arr[index1];
+//         arr[index1] = arr[index2];
+//         arr[index2] = temp;
+//     }
+//     return arr;
+// }
 
-console.log( shuffle(a))
+// console.log( shuffle(a) )
+
+//========================================================
+
+
+// let d = new Date();
+
+// let b = String.fromCharCode(75)
+// console.log(b)
+
+// function removeFalsy( arr){
+
+//     arr.filter( function(i){
+//         return Boolean(i);
+//     })
+// }
