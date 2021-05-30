@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="main-content">
 
@@ -17,16 +19,16 @@
                 Thank you for taking the time to help us improve the platform
             </p>
 
-            <form action="" id="survey-form"> 
+            <form action="" id="survey-form">
                 <label for="name" id="name-label">
                     Name
-                    <input type="text" id="name" placeholder="Enter your name">
-                    
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
                 </label>
 
-                <label for="email"  id="email-label">
+                <label for="email" id="email-label">
                     Email
-                    <input type="email" id="email" placeholder="Enter your Email">
+                    <input type="email" id="email" placeholder="Enter your Email" required>
                 </label>
 
                 <label for="number" id="number-label">
@@ -36,29 +38,56 @@
 
                 <label for="">
                     Which option best describes your current role?
-                    <select name="" id="dropdown" >
-                        <option value="#" >Select current Role</option>
+                    <select name="" id="dropdown">
+                        <option value="#">Select current Role</option>
                         <option value="Student">Student</option>
                         <option value="Fulltime Job">Fulltime Job</option>
                         <option value="Fulltime Learner">Fulltime Learner</option>
                         <option value="Prefer not to say">Prefer not to say</option>
                     </select>
                 </label>
-                
 
-                <label for="recommend">
-                    Would you recommend freeCodeCamp to a friend?
-                    <input type="radio">Definitely
-                    <input type="radio">Maybe
-                    <input type="radio">Not Sure
-                </label>
+
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label>
+                      <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                      />Definitely</label
+                    >
+                    <label>
+                      <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                      />Maybe</label
+                    >
+              
+                    <label
+                      ><input
+                        name="user-recommend"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                      />Not sure</label
+                    >
+                  </div>
+ 
+                
+                
+            
 
 
 
                 <label for="">
                     Which option best describes your current role?
-                    <select name="" id="dropdown" >
-                        <option value="#" >Select current Role</option>
+                    <select name="" id="dropdown">
+                        <option value="#" disabled selected>Select current Role</option>
                         <option value="Student">Student</option>
                         <option value="Fulltime Job">Fulltime Job</option>
                         <option value="Fulltime Learner">Fulltime Learner</option>
@@ -66,20 +95,14 @@
                     </select>
                 </label>
 
-                <label for="improve">
-                    Would you recommend freeCodeCamp to a friend?
-                    <input type="checkbox">Definitely
-                    <input type="checkbox">Maybe
-                    <input type="checkbox">Definitely
-                    <input type="checkbox">Maybe
-                    <input type="checkbox">Not Sure
-                    <input type="checkbox">Not Sure
-                </label>
-
+    
 
                 <label for="textarea">
-                    <textarea name="" id="" cols="30" rows="10" draggable="true" s></textarea>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
                 </label>
+
+                
+                <button id="submit" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -87,4 +110,5 @@
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">  
+
+
+    <style>
+        .users{
+            --bs-gutter-x : 3rem;
+            --bs-gutter-y : 3rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row mt-5 mb-5">
+
+
+            <div class="col-12">
+                <h1 class="text-center">Hello ReqRes Users</h1>
+            </div>
+
+
+            <div class="row users justify-content-center ">
+                <div class="col-3 user justify-content-center">
+                    <h4 class="user-name text-center">
+                        Quang
+                    </h4>
+                    <p class="user-email text-center">
+                        quang@techmaster.vn
+                    </p>
+                    <div class="user-image text-center">    
+                        <img src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" alt="" class="avatar" style="max-width:100%">
+                    </div>
+                </div>
+
+
+               
+
+            </div>
+ 
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+        
+        const xhr = new XMLHttpRequest();
+
+        const method = "GET" ;
+
+        const uri = "https://reqres.in/api/users?page=2";
+
+        xhr.responseType = "json";
+        xhr.open( method , uri);
+
+        xhr.onerror = () => console.log("Cannot send request")
+
+        xhr.onload = () => {
+
+            const users = xhr.response.data;
+
+            const html = users.map( (u) => {
+
+                console.log(u)
+                return `
+                    <div class="col-3 user">
+                        <h4 class="user-name text-center">
+                            ${u.first_name} ${u.last_name}
+                        </h4>
+                        <p class="user-email text-center">
+                            ${u.email}
+                        </p>
+                        <div class="user-image text-center">    
+                            <img src="${u.avatar}" alt="" class="avatar" style="max-width:100%">
+                        </div>
+                    </div>
+
+                `
+            }).join("");
+            
+            document.querySelector(".users").innerHTML = html;
+        }
+
+        xhr.send(null)
+
+    </script>
+</body>
+</html>
