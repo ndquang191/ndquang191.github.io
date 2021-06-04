@@ -1,0 +1,16 @@
+{
+    "students": [
+        {
+            "id" : 1,
+            "firstname" : "Quang",
+            "email" : "quang@tech.vn",
+            "phone" : "124124"
+        },
+        {
+            "id" : 1,
+            "firstname" : "Quang",
+            "email" : "quang@tech.vn",
+            "phone" : "123123"
+        }
+    ]   
+}
