@@ -18,11 +18,15 @@ body{
     background-size: cover ;
     min-height: 100vh;
     background-position: center center;
+
+    min-height: 100vh;
 }
 
 .countdown-container{
     display: flex;
-
+    flex-wrap: wrap;
+    
+    justify-content: center;
 }
 
 h1{
